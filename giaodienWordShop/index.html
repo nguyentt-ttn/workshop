@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <div class="max-w-6xl mx-auto p-3">
+      <div class="grid grid-cols-3 gap-8 items-center">
+        <div>
+          <img src="./images/logo.svg" alt="NhShop" />
+        </div>
+        <nav>
+          <ul class="flex justify-center space-x-5">
+            <li>
+              <a href="/" class="hover:text-red-500"> Home </a>
+            </li>
+            <li>
+              <a href="/shop.html" class="hover:text-red-500"> Shop </a>
+            </li>
+            <li>
+              <a href="/about.html" class="hover:text-red-500"> About </a>
+            </li>
+            <li>
+              <a href="/contact.html" class="hover:text-red-500"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex justify-end space-x-4">
+          <a href="/login">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="/search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="/heart">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+          <a href="/category.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div>
+    <img src="https://picsum.photos/id/1/1440/600" alt="" class="w-full" />
+
+    <!-- /**px-4  */ -->
+    <section class="max-w-6xl mx-auto py-12">
+      <div class="flex justify-between items-center">
+        <h2 class="text-4xl font-semibold text-gray-800">New Products</h2>
+        <button
+          class="mt-4 border-2 border-orange-500 text-orange-500 bg-white py-2 px-10 rounded hover:bg-orange-500 hover:text-white transition duration-300">
+          View All
+        </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <div class="bg-[#f7f7f7] shadow-md rounded-sm overflow-hidden">
+          <img src="https://picsum.photos/id/1/720/900" alt="Stylish chair" class="w-full h-72 object-cover" />
+          <div class="p-4">
+            <a href="./product-detail.html" class="text-xl font-bold text-gray-800">Stylish chair</a>
+            <p class="text-gray-600 mb-2">Stylish cafe chair</p>
+            <div class="text-red-500 text-lg font-semibold">
+              2,500,000 VND
+            </div>
+            <button
+              class="rounded-sm mt-4 border-2 border-[#CA8A04] text-[#CA8A04] bg-white py-2 px-4 hover:bg-[#CA8A04] hover:text-white transition duration-300 w-full font-semibold">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-[#f7f7f7] shadow-md rounded-sm overflow-hidden">
+          <img src="https://picsum.photos/id/1/720/900" alt="Stylish chair" class="w-full h-72 object-cover" />
+          <div class="p-4">
+            <a href="./product-detail.html" class="text-xl font-bold text-gray-800">Lydia chair</a>
+            <p class="text-gray-600 mb-2">Stylish cafe chair</p>
+            <div class="text-red-500 text-lg font-semibold">
+              1,800,000 VND
+            </div>
+            <button
+              class="rounded-sm mt-4 border-2 border-[#CA8A04] text-[#CA8A04] bg-white py-2 px-4 hover:bg-[#CA8A04] hover:text-white transition duration-300 w-full font-semibold">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-[#f7f7f7] shadow-md rounded-sm overflow-hidden">
+          <img src="https://picsum.photos/id/1/720/900" alt="Stylish chair" class="w-full h-72 object-cover" />
+          <div class="p-4">
+            <a href="./product-detail.html" class="text-xl font-bold text-gray-800">Luxury big sofa</a>
+            <p class="text-gray-600 mb-2">Stylish cafe chair</p>
+            <div class="text-red-500 text-lg font-semibold">
+              2,000,000 VND
+            </div>
+            <button
+              class="rounded-sm mt-4 border-2 border-[#CA8A04] text-[#CA8A04] bg-white py-2 px-4 hover:bg-[#CA8A04] hover:text-white transition duration-300 w-full font-semibold">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-[#f7f7f7] shadow-md rounded-sm overflow-hidden">
+          <img src="https://picsum.photos/id/1/720/900" alt="Stylish chair" class="w-full h-72 object-cover" />
+          <div class="p-4">
+            <a href="./product-detail.html" class="text-xl font-bold text-gray-800">Robust table and stool</a>
+            <p class="text-gray-600 mb-2">Stylish cafe chair</p>
+            <div class="text-red-500 text-lg font-semibold">
+              4,500,000 VND
+            </div>
+            <button
+              class="rounded-sm mt-4 border-2 border-[#CA8A04] text-[#CA8A04] bg-white py-2 px-4 hover:bg-[#CA8A04] hover:text-white transition duration-300 w-full font-semibold">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container mx-auto max-w-6xl py-4">
+      <section class="mb-8">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-4xl font-semibold text-gray-800">Gallery</h2>
+          <button
+            class="border-2 border-orange-500 text-orange-500 bg-white py-2 px-10 rounded hover:bg-orange-500 hover:text-white transition duration-300">
+            View all gallery
+          </button>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <img src="https://picsum.photos/id/1/406/270" alt="Gallery Image 1" class="w-full object-cover rounded" />
+          <img src="https://picsum.photos/id/2/406/270" alt="Gallery Image 1" class="w-full object-cover rounded" />
+          <img src="https://picsum.photos/id/3/406/270" alt="Gallery Image 1" class="w-full object-cover rounded" />
+          <img src="https://picsum.photos/id/4/406/270" alt="Gallery Image 1" class="w-full object-cover rounded" />
+          <img src="https://picsum.photos/id/5/406/270" alt="Gallery Image 1" class="w-full object-cover rounded" />
+          <img src="https://picsum.photos/id/6/406/270" alt="Gallery Image 1" class="w-full object-cover rounded" />
+        </div>
+      </section>
+      <section>
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-4xl font-semibold text-gray-800">News</h2>
+          <button
+            class="border-2 border-orange-500 text-orange-500 bg-white py-2 px-10 rounded hover:bg-orange-500 hover:text-white transition duration-300">
+            View all new
+          </button>
+        </div>
+        <div class="grid grid-cols-4 gap-5 mb-6">
+          <div class="bg-white p-4 rounded shadow">
+            <img src="https://picsum.photos/id/100/720/900" alt="News Image 1"
+              class="w-full h-44 object-cover rounded mb-2" />
+            <p class="flex items-cente">
+              <span class="mr-1"><i class="fa-regular fa-calendar"></i> </span>24/04/2024
+            </p>
+            <p class="text-gray-600 font-semibold mb-2">
+              A bedroom must have something like this
+            </p>
+            <a href="#" class="text-red-500 flex">Xem chi tiết
+              <span class="ml-1">
+                <i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <img src="https://picsum.photos/id/100/720/900" alt="News Image 1"
+              class="w-full h-44 object-cover rounded mb-2" />
+            <p class="flex items-cente">
+              <span class="mr-1"><i class="fa-regular fa-calendar"></i> </span>24/04/2024
+            </p>
+            <p class="text-gray-600 font-semibold mb-2">
+              A bedroom must have something like this
+            </p>
+            <a href="#" class="text-red-500 flex">Xem chi tiết
+              <span class="ml-1">
+                <i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <img src="https://picsum.photos/id/100/720/900" alt="News Image 1"
+              class="w-full h-44 object-cover rounded mb-2" />
+            <p class="flex items-cente">
+              <span class="mr-1"><i class="fa-regular fa-calendar"></i> </span>24/04/2024
+            </p>
+            <p class="text-gray-600 font-semibold mb-2">
+              A bedroom must have something like this
+            </p>
+            <a href="#" class="text-red-500 flex">Xem chi tiết
+              <span class="ml-1">
+                <i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+          <div class="bg-white p-4 rounded shadow">
+            <img src="https://picsum.photos/id/100/720/900" alt="News Image 1"
+              class="w-full h-44 object-cover rounded mb-2" />
+            <p class="flex items-cente">
+              <span class="mr-1"><i class="fa-regular fa-calendar"></i> </span>24/04/2024
+            </p>
+            <p class="text-gray-600 font-semibold mb-2">
+              A bedroom must have something like this
+            </p>
+            <a href="#" class="text-red-500 flex">Xem chi tiết
+              <span class="ml-1">
+                <i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer class="bg-black text-gray-400 py-12">
+    <div class="pl-32 container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <img alt="Furniro Logo" class="mb-4" src="./images/logofooter.svg" />
+        <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Sitemap</h3>
+        <ul>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Home </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Shop </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> About </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Contact </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Help</h3>
+        <ul>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Payment Options </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Returns </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Privacy Policies </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Location</h3>
+        <p class="mb-3">support@euphoria.in</p>
+        <p class="mb-3">Ahmedabad Main Road</p>
+        <p class="mb-3">Udaipur, India- 313002</p>
+      </div>
+    </div>
+    <div class="border border-gray-700 w-10/12 mx-auto bg-gray-700 my-8"></div>
+    <div class="text-center mt-8">
+      <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

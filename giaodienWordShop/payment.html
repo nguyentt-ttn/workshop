@@ -1,0 +1,215 @@
+<html>
+
+<head>
+  <title>Billing Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <header>
+    <div class="max-w-6xl mx-auto p-3">
+      <div class="grid grid-cols-3 gap-8 items-center">
+        <div>
+          <img src="./images/logo.svg" alt="NhShop" />
+        </div>
+        <nav>
+          <ul class="flex justify-center space-x-5">
+            <li>
+              <a href="/" class="hover:text-red-500"> Home </a>
+            </li>
+            <li>
+              <a href="/shop.html" class="hover:text-red-500"> Shop </a>
+            </li>
+            <li>
+              <a href="/about.html" class="hover:text-red-500"> About </a>
+            </li>
+            <li>
+              <a href="/contact.html" class="hover:text-red-500"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex justify-end space-x-4">
+          <a href="/login">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="/search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="/heart">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+          <a href="/category.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-6xl mx-auto py-4 mb-4 p-3">
+    <h1 class="text-3xl font-bold mb-6">Billing details</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div>
+              <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+              <input type="text" id="first-name" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500" />
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm font-medium text-gray-700">Last Name</label>
+              <input type="text" id="last-name" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500" />
+            </div>
+          </div>
+          <div class="">
+            <label for="company-name" class="block text-sm font-medium text-gray-700">Company Name (Optional)</label>
+            <input type="text" id="company-name" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2" />
+          </div>
+          <div class="">
+            <label for="country" class="block text-sm font-medium text-gray-700">Country / Region</label>
+            <select id="country" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500  mb-2 ">
+              <option class=" mt-3 mb-3 ">Sri Lanka</option>
+            </select>
+          </div>
+          <div>
+            <label for="street-address" class="block text-sm font-medium text-gray-700">Street address</label>
+            <input type="text" id="street-address" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2" />
+          </div>
+          <div>
+            <label for="city" class="block text-sm font-medium text-gray-700">Town / City</label>
+            <input type="text" id="city" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2" />
+          </div>
+          <div>
+            <label for="province" class="block text-sm font-medium text-gray-700">Province</label>
+            <select id="province" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2">
+              <option>Western Province</option>
+            </select>
+          </div>
+          <div>
+            <label for="zip-code" class="block text-sm font-medium text-gray-700">ZIP code</label>
+            <input type="text" id="zip-code" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2" />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+            <input type="text" id="phone" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email address</label>
+            <input type="email" id="email" class="border-b shadow-smd border-gray-300 py-1 w-full focus:outline-none focus:border-b-yellow-500 mb-2" />
+          </div>
+        </form>
+      </div>
+      <div>
+        <div class="">
+          <div class="flex justify-between">
+            <h2 class="text-xl font-bold mb-4">Product</h2>
+            <h2 class="text-xl font-bold mb-4">Subtotal</h2>
+          </div>
+          <div class="flex justify-between mb-2">
+            <span>Asgaard sofa X1</span>
+            <span>25.000.00đ</span>
+          </div>
+          <div class="flex justify-between mb-2">
+            <span>Subtotal</span>
+            <span>25.000.00đ</span>
+          </div>
+          <div class="flex justify-between font-bold text-lg mb-4">
+            <span>Total</span>
+            <span>25.000.00đ</span>
+          </div>
+          <div class="border-b border-gray-300 block mb-6 mt-6"></div>
+          <div class="mb-4">
+            <div class="space-y-2">
+              <div>
+                <input type="radio" id="direct-bank-transfer" name="payment-method" checked />
+                <label for="direct-bank-transfer" class="ml-2 font-bold">Direct Bank Transfer</label>
+                <p class="text-sm text-gray-600 mt-1">
+                  Make your payment directly into our bank account. Please use
+                  your Order ID as the payment reference. Your order will not
+                  be shipped until the funds have cleared in our account.
+                </p>
+              </div>
+              <div>
+                <input type="radio" id="atm-bank-transfer" name="payment-method" />
+                <label for="atm-bank-transfer" class="ml-2">ATM Bank Transfer</label>
+              </div>
+              <div>
+                <input type="radio" id="cash-on-delivery" name="payment-method" />
+                <label for="cash-on-delivery" class="ml-2">Cash On Delivery</label>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600 mb-4">
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our
+            <a href="#" class="text-yellow-500">privacy policy</a>.
+          </p>
+          <div class="text-center mt-8">
+            <button
+              class="px-32 bg-white font-bold text-yellow-500 border border-yellow-500 hover:bg-yellow-500 hover:text-white py-2">
+              Place order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-black text-gray-400 py-12">
+    <div class="pl-32 container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <img alt="Furniro Logo" class="mb-4" src="./images/logofooter.svg" />
+        <p>400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Sitemap</h3>
+        <ul>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Home </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Shop </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> About </a>
+          </li class="mb-3">
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Contact </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Help</h3>
+        <ul>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Payment Options </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Returns </a>
+          </li>
+          <li class="mb-3">
+            <a class="hover:text-white" href="#"> Privacy Policies </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-3">Location</h3>
+        <p class="mb-3">support@euphoria.in</p>
+        <p class="mb-3">Ahmedabad Main Road</p>
+        <p class="mb-3">Udaipur, India- 313002</p>
+      </div>
+    </div>
+    <div class="border border-gray-700 w-10/12 mx-auto bg-gray-700 my-8"></div>
+    <div class="text-center mt-8">
+      <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
