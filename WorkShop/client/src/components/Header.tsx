@@ -35,7 +35,7 @@ const Header = () => {
                         </ul>
                     </nav>
                     <div className="flex justify-end space-x-4">
-                        <Link to="/auth/login">
+                        <Link to="/signin">
                             <AiOutlineUser />
                         </Link>
                         <Link to="/search">

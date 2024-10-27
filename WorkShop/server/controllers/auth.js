@@ -17,6 +17,7 @@ const signupSchema = Joi.object({
 const signinSchema = Joi.object({
     email: Joi.string().email().required(),
     password: Joi.string().min(6).required(),
+    
 });
 export const signup = async (req, res) => {
     try {
@@ -26,6 +27,16 @@ export const signup = async (req, res) => {
         }
 
         const { username, email, password } = req.body;
+        const existingEmailUser = await User.findOne({ email });
+
+        if (existingEmailUser) {
+            return res.status(StatusCodes.CONFLICT).json({ message: "Email đã tồn tại" });
+        }
+
+        const existingUsernameUser = await User.findOne({ username });
+        if (existingUsernameUser) {
+            return res.status(StatusCodes.CONFLICT).json({ message: "User đã tồn tại" });
+        }
 
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(password, salt);
@@ -64,7 +75,8 @@ export const signin = async (req, res) => {
         }
 
         // Tạo token và trả về cho người dùng
-        const token = jwt.sign({ _id: user._id }, import.meta.env.VITE_JWT_SECRET, {
+        console.log("JWT Secret:", process.env.VITE_JWT_SECRET);
+        const token = jwt.sign({ _id: user._id }, process.env.VITE_JWT_SECRET, {
             expiresIn: "1h",
         });
         // // Sanitize user object
